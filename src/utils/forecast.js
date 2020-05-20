@@ -13,7 +13,7 @@ const forecast = (longitude, latitude, callback) => {
         callback ('unable to connect to find location')
       }
       else {
-        callback (undefined,body.current.weather_descriptions[0] + ' it is currently ' + body.current.temperature + ' it feel like ' + body.current.feelslike)
+        callback (undefined,body.current.weather_descriptions[0] + ' it is currently ' + body.current.temperature + ' it feel like ' + body.current.feelslike+ ' and humidity is ' + body.current.humidity)
       }
     }
   })

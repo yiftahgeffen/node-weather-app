@@ -98,7 +98,7 @@ app.get('*', (req,res) => {
     creator: 'yiftah'
   })
 })
-
+console.log(' THIS IS THE PORT = '+port)
 app.listen(port, () => {
   console.log('server started on port '+port)
 })

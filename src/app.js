@@ -7,6 +7,7 @@ const forecast = require('./utils/forecast.js')
 
 
 const app = express()
+const port = process.env.POR || 3000
 // const path_1 = __dirname.substring(0,__dirname.lastIndexOf('/')) +'/public'
 
 
@@ -98,6 +99,6 @@ app.get('*', (req,res) => {
   })
 })
 
-app.listen(3000, () => {
-  console.log('server started on port 3000')
+app.listen(port, () => {
+  console.log('server started on port '+port)
 })

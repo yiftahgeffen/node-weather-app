@@ -8,7 +8,7 @@ const geocode = (address, callback) => {
       callback('unable to connect to weather forcast')
     }
     else {
-      if (body.features.length===0) {
+      if (!body.features || body.features.length===0) {
         callback('unable to find location')
       }
       else {

@@ -7,7 +7,7 @@ const forecast = require('./utils/forecast.js')
 
 
 const app = express()
-const port = process.env.POR || 3000
+const port = process.env.PORT || 3000
 // const path_1 = __dirname.substring(0,__dirname.lastIndexOf('/')) +'/public'
 
 
